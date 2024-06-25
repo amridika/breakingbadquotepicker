@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/randomPage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <title>Breaking Bad Quotes Picker</title>
+  </head>
+  <body>
+    <img id="bgImage" src="images/<%=author%> Bg.png" alt="bgimage">
+    <img id="backButton" src="images/arrow.svg" alt="back button" onclick="window.location.href='/custom'">
+    <div class="hero">
+        <div class="container">
+            <div class="columnLeft">
+                <img id="authorImage" src="images/<%= author %>.png" alt="<%= author %> image">
+            </div>
+            <div class="columnRight">
+                <h2>" <%= quote %> "</h2>
+                <p><%= author %></p>                
+                <form action="/customItem" method="post">                  
+                  <button id="getRandom" onclick="window.location.href='/customItem'" name="author" value="<%=author%>" >Next</button>
+                </form>   
+            </div>            
+        </div>
+    </div>
+    <div id="copyright">Made by <a href="https://github.com/amridika" target="_blank">Amri Dika</a></a></div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+body {
+  background-color: #131313;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body,h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.listImage {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.listImage .item {
+  width: 200px;
+  cursor: pointer;
+}
+
+#backButton {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 30px;
+  cursor: pointer;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  height: fit-content;
+  border: 0;
+  box-sizing: content-box;
+  padding-block: 0;
+  padding-inline: 0;
+}

@@ -1,0 +1,85 @@
+body {
+  background-color: #181a00;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+h2,p,body,a {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+    max-width: 500px;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+button {
+    width: fit-content;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#copyright {
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-shadow: 1px 1px 2px black;
+}
+
+#copyright a {
+  color: white;
+}
+
+#authorImage {
+  width: 300px;
+  border-radius: 10px;
+}
+
+#backButton {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    width: 1fr;
+    display: flex;
+}
+
+.columnRight {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#bgImage {
+    opacity: 0.1;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
